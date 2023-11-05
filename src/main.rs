@@ -1,8 +1,6 @@
-mod server;
-mod utils;
+use routing::run;
 
-
- #[tokio::main]
- async fn main() {
-    server::serve().await;
+#[tokio::main]
+async fn main() {
+    run().await
 }
